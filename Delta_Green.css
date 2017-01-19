@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:bold');
 
-
 /*
 table, th, td {
     border: 1px solid red;
 }
 */
 
-
 tr {
     height: 23px;
 }
-
 textarea {
     width: 100%;
     height: 100%;
@@ -21,21 +18,21 @@ textarea {
     display: block;
     font-family: 'Courier';
 }
-
 td.center {
     text-align: center;
 }
-
 input.center {
     text-align: center;
 }
-
 html {
     font-family: 'Droid Sans', sans-serif;
 }
 .cell {
     border-left: 1px solid black;
     border-right: 1px solid black;
+}
+.gray {
+    background-color: #f3f3f3;
 }
 .dg_sheet_table {
     width: 100%;
@@ -87,8 +84,50 @@ td.bottom_border {
     -o-transform: translate(-50%, -50%) rotate(-90deg);
     /* Internet Explorer -BUG- missing translate */
     filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
-    
     position: absolute;
     top: 50%;
     left: 50%;
+}
+.skill_checkbox {
+    position: relative;
+}
+.skill_checkbox label {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
+    background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+.skill_checkbox label:after {
+    content: '';
+    margin: auto;
+    width: 4px;
+    height: 2px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 2px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.skill_checkbox label:hover::after {
+    opacity: 0.3;
+}
+.skill_checkbox input[type=checkbox] {
+    visibility: hidden;
+}
+.skill_checkbox input[type=checkbox]:checked + label:after {
+    opacity: 1;
 }
