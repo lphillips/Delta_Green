@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:bold');
+
+
+/*
+table, th, td {
+    border: 1px solid red;
+}
+*/
+
+
+tr {
+    height: 23px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background-color: #f3f3f3;
+    display: block;
+    font-family: 'Courier';
+}
+
+td.center {
+    text-align: center;
+}
+
+input.center {
+    text-align: center;
+}
+
+html {
+    font-family: 'Droid Sans', sans-serif;
+}
+.cell {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.dg_sheet_table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.dg_sheet_header {
+    background-color: black
+}
+.dg_spacer_row {
+    height: 4px
+}
+.dg_field_header {
+    font-size: 10px;
+    font-weight: bold;
+}
+.dg_input_field {
+    width: 100%;
+    line-height: 23px;
+    display: block;
+    padding: 0;
+    border-width: 0;
+    background-color: #f3f3f3;
+    font-family: 'Courier';
+}
+.dg_text_col {
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    font-size: 12px;
+}
+td.top_border {
+    border-top: 1px solid black;
+}
+td.bottom_border {
+    border-bottom: 1px solid black;
+}
+.vert_text_wrapper {
+    position: relative;
+}
+.vert_text {
+    /* Safari */
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+    /* Firefox */
+    -moz-transform: translate(-50%, -50%) rotate(-90deg);
+    /* IE */
+    -ms-transform: translate(-50%, -50%) rotate(-90deg);
+    /* Opera */
+    -o-transform: translate(-50%, -50%) rotate(-90deg);
+    /* Internet Explorer -BUG- missing translate */
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
