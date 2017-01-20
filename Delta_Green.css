@@ -34,8 +34,10 @@ html {
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
-.gray {
+.gray_cell {
     background-color: #f3f3f3;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 .dg_sheet_table {
     width: 100%;
