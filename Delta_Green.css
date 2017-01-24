@@ -98,46 +98,96 @@ td.bottom_border {
     top: 50%;
     left: 50%;
 }
-.skill_checkbox {
-    position: relative;
-}
-.skill_checkbox label {
+.control {
     width: 12px;
     height: 12px;
-    cursor: pointer;
-    position: absolute;
     margin: auto;
+    font-size: 18px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.control__indicator {
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
-    background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
-    border-radius: 4px;
-    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
-}
-.skill_checkbox label:after {
-    content: '';
+    width: 12px;
+    height: 12px;
     margin: auto;
-    width: 4px;
-    height: 2px;
+    border-radius: 4px;
+    background: #222222;
+}
+/* Hover and focus states */
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+    background: #222222;
+}
+/* Checked state */
+
+.control input:checked ~ .control__indicator {
+    background: #222222;
+}
+/* Hover state whilst checked */
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+    background: #222222;
+}
+/* Disabled state */
+
+.control input:disabled ~ .control__indicator {
+    pointer-events: none;
+    opacity: .6;
+    background: #e6e6e6;
+}
+/* Check mark */
+
+.control__indicator:after {
     position: absolute;
-    top: 3px;
+    display: none;
+    content: '';
+}
+/* Show check mark */
+
+.control input:checked ~ .control__indicator:after {
+    display: block;
+}
+/* Checkbox tick */
+
+.control--checkbox .control__indicator:after {
+    top: 1px;
     left: 3px;
-    border: 2px solid #fcfff4;
-    border-top: none;
-    border-right: none;
-    background: transparent;
-    opacity: 0;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    width: 3px;
+    height: 6px;
+    transform: rotate(45deg);
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
 }
-.skill_checkbox label:hover::after {
-    opacity: 0.3;
+/* Disabled tick colour */
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b;
 }
-.skill_checkbox input[type=checkbox] {
-    visibility: hidden;
+/* Radio button inner circle */
+
+.control--radio .control__indicator:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
 }
-.skill_checkbox input[type=checkbox]:checked + label:after {
-    opacity: 1;
+/* Disabled circle colour */
+
+.control--radio input:disabled ~ .control__indicator:after {
+    background: #7b7b7b;
 }
