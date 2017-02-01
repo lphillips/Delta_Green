@@ -19,1044 +19,1467 @@
         <div class="charsheet">
 
             <!-- CHARACTER SHEET BEGINS HERE -->
-            <input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Page 1" checked="checked" />
+            <input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Page 1" />
             <span class="sheet-tab sheet-tab1">PAGE 1</span>
-            <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" title="Page 2" />
+            <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" title="Page 2" checked="checked" />
             <span class="sheet-tab sheet-tab2">PAGE 2</span>
 
             <!-- Tab 1 Starts Here -->
             <div class="sheet-section-page1">
-                    <table class="dg_sheet_table">
-                        <thead>
-                            <tr style="height:0">
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:0.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                                <td style="width:2.75%"></td>
-                            </tr>
-                            <tr>
-                                <th class="dg_sheet_header" colspan="36">
-                                    <img src="Delta_Green_logo.png" alt="logo" width="15%">
-                                </th>
-                            </tr>
-
-                        </thead>
-                        <tbody>
-                            <!-- Delta Green sheet header -->
-                            <tr class="dg_spacer_row"></tr>
-
-                            <!-- Section 1: Name and Profession -->
-                            <tr class="dg_field_header">
-                                <td colspan="1" rowspan="6" class="dg_text_col top_border bottom_border">
-                                    <div class="vert_text_wrapper">
-                                        <div class="vert_text">PERSONAL DATA</div>
-                                    </div>
-                                </td>
-                                <td colspan="18" class="cell top_border">1. LAST NAME, FIRST NAME (AND ALIAS OR CODE NAME IF APPLICABLE)</td>
-                                <td colspan="17" class="cell top_border">2. PROFESSION (RANK IF APPLICABLE)</td>
-                            </tr>
-                            <tr>
-                                <td colspan="18" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_charactername">
-                                </td>
-                                <td colspan="18" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_profession">
-                                </td>
-                            </tr>
-
-                            <!-- Section 2: Employer and Nationality -->
-                            <tr class="dg_field_header">
-                                <td colspan="18" class="cell top_border">3. EMPLOYER</td>
-                                <td colspan="17" class="cell top_border">4. NATIONALITY</td>
-                            </tr>
-                            <tr>
-                                <td colspan="18" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_employer">
-                                </td>
-                                <td colspan="18" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_nationality">
-                                </td>
-                            </tr>
-
-                            <!-- Section 3: Sex, Age, Education -->
-                            <tr class="dg_field_header">
-                                <td colspan="8" class="cell top_border">5. SEX</td>
-                                <td colspan="6" class="cell top_border">6. AGE AND D.O.B.</td>
-                                <td colspan="22" class="cell top_border">7. EDUCATION AND OCCUPATIONAL HISTORY</td>
-                            </tr>
-                            <tr>
-                                <td colspan="8" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_sex">
-                                </td>
-                                <td colspan="6" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_agedob">
-                                </td>
-                                <td colspan="22" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_educationhistory">
-                                </td>
-                            </tr>
-
-                            <!-- Delta Green sheet header -->
-                            <tr class="dg_spacer_row"></tr>
-
-                            <!-- Section 4: Stats / Section 5: Psych -->
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="1" rowspan="15" class="dg_text_col top_border bottom_border">
-                                    <div class="vert_text_wrapper">
-                                        <div class="vert_text">STATISTICAL DATA</div>
-                                    </div>
-                                </td>
-                                <td colspan="5" class="cell top_border bottom_border">8. STATISTICS</td>
-                                <td colspan="2" class="cell center top_border bottom_border">SCORE</td>
-                                <td colspan="2" class="cell center top_border bottom_border">x5</td>
-                                <td colspan="9" class="cell center top_border bottom_border">DISTINGUISHING FEATURES</td>
-
-                                <td colspan="1"></td>
-
-                                <!-- Psych -->
-                                <td colspan="1" rowspan="15" class="dg_text_col top_border bottom_border">
-                                    <div class="vert_text_wrapper">
-                                        <div class="vert_text">PSYCHOLOGICAL DATA</div>
-                                    </div>
-                                </td>
-                                <td colspan="1" class="cell top_border bottom_border">11.</td>
-                                <td colspan="13" class="cell center top_border bottom_border">BONDS</td>
-                                <td colspan="2" class="cell center top_border bottom_border">SCORE</td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="5" class="cell top_border bottom_border">Strength (STR)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_strength">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_strx5" value="@{strength}*5" disabled="true">
-                                </td>
-                                <td colspan="9" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_strengthfeatures">
-                                </td>
-
-                                <td colspan="1"></td>
-
-                                <!-- Psych -->
-                                <td colspan="14" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_bond1">
-                                </td>
-                                <td colspan="2" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_bond1score">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="5" class="cell top_border bottom_border">Constitution (CON)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_constitution">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_conx5" value="@{constitution}*5" disabled="true">
-                                </td>
-                                <td colspan="9" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_constitutionfeatures">
-                                </td>
-
-                                <td colspan="1"></td>
-
-                                <!-- Psych -->
-                                <td colspan="14" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_bond2">
-                                </td>
-                                <td colspan="2" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_bond2score">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="5" class="cell top_border bottom_border">Dexterity (DEX)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_dexterity">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_dexx5" value="@{dexterity}*5" disabled="true">
-                                </td>
-                                <td colspan="9" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_dexterityfeatures">
-                                </td>
-
-                                <td colspan="1"></td>
-
-                                <!-- Psych -->
-                                <td colspan="14" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_bond3">
-                                </td>
-                                <td colspan="2" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_bond3score">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="5" class="cell top_border bottom_border">Intelligence (INT)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_intelligence">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_intx5" value="@{intelligence}*5" disabled="true">
-                                </td>
-                                <td colspan="9" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_intelligencefeatures">
-                                </td>
-
-                                <td colspan="1"></td>
-
-                                <!-- Psych -->
-                                <td colspan="14" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_bond4">
-                                </td>
-                                <td colspan="2" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_bond4score">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="5" class="cell top_border bottom_border">Power (POW)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_power">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_powx5" value="@{power}*5" disabled="true">
-                                </td>
-                                <td colspan="9" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_powerfeatures">
-                                </td>
-
-                                <td colspan="1"></td>
-
-                                <!-- Psych -->
-                                <td colspan="14" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_bond5">
-                                </td>
-                                <td colspan="2" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_bond5score">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="5" class="cell top_border bottom_border">Charisma (CHA)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_charisma">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_chax5" value="@{charisma}*5" disabled="true">
-                                </td>
-                                <td colspan="9" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_charismafeatures">
-                                </td>
-
-                                <td colspan="1"></td>
-
-                                <!-- Psych -->
-                                <td colspan="14" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_bond6">
-                                </td>
-                                <td colspan="2" class="gray_cell center top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_bond6score">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="1" class="cell top_border bottom_border">9.</td>
-                                <td colspan="7" class="cell top_border bottom_border center">DERIVED ATTRIBUTES</td>
-                                <td colspan="5" class="cell top_border bottom_border center">MAXIMUM</td>
-                                <td colspan="5" class="cell top_border bottom_border center">CURRENT</td>
-
-                                <td colspan="1"></td>
-
-                                <!-- Psych -->
-                                <td colspan="1" class="cell top_border bottom_border">12.</td>
-                                <td colspan="15" class="cell top_border bottom_border center">MOTIVATIONS AND MENTAL DISORDERS</td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="8" class="cell top_border bottom_border">Hit Points (HP)</td>
-                                <td colspan="5" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_hitpoints_max" value="(@{strength}+@{constitution})/2" disabled="true">
-                                </td>
-                                <td colspan="5" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_hitpoints">
-                                </td>
-
-                                <td colspan="1"></td>
-
-                                <!-- Psych -->
-                                <td colspan="15" rowspan="5" class="gray_cell top_border bottom_border">
-                                    <textarea name="attr_motivationsdisorders"></textarea>
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="8" class="cell top_border bottom_border">Willpower Points (WP)</td>
-                                <td colspan="5" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_willpowerpoints_max" value="@{power}" disabled="true">
-                                </td>
-                                <td colspan="5" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_willpowerpoints">
-                                </td>
-
-                                <td colspan="1"></td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="8" class="cell top_border bottom_border">Sanity Points (SAN)</td>
-                                <td colspan="5" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_sanitypoints_max" value="99-@{unnaturalskill}">
-                                </td>
-                                <td colspan="5" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_sanitypoints">
-                                </td>
-
-                                <td colspan="1"></td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="8" class="cell top_border bottom_border">Breaking Point (BP)</td>
-                                <td colspan="5" class="gray_cell top_border bottom_border"></td>
-                                <td colspan="5" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_breakingpoint">
-                                </td>
-
-                                <td colspan="1"></td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="1" class="cell top_border bottom_border">10.</td>
-                                <td colspan="17" class="cell top_border bottom_border">PHYSICAL DESCRIPTION</td>
-
-                                <td colspan="1"></td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <!-- Stats -->
-                                <td colspan="18" rowspan="2" class="gray_cell top_border bottom_border">
-                                    <textarea name="attr_physicaldescription"></textarea>
-                                </td>
-
-                                <td colspan="1"></td>
-
-                                <!-- Psych -->
-                                <td colspan="1" class="cell top_border bottom_border">13.</td>
-                                <td colspan="15" class="cell top_border bottom_border">INCIDENTS OF SAN LOSS WITHOUT GOING INSANE</td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1"></td>
-                                <td colspan="3" class="cell top_border bottom_border center">Violence</td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_violencecheck1" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_violencecheck2" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_violencecheck3" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="2" class="top_border bottom_border"></td>
-                                <td colspan="3" class="cell top_border bottom_border center">Helplessness</td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_helplessnesscheck1" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_helplessnesscheck2" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_helplessnesscheck3" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="1" class="cell top_border bottom_border"></td>
-                            </tr>
-
-                            <tr class="dg_spacer_row"></tr>
-
-                            <!-- Skills -->
-                            <tr class="dg_field_header">
-                                <td colspan="1" rowspan="19" class="dg_text_col top_border bottom_border">
-                                    <div class="vert_text_wrapper">
-                                        <div class="vert_text">APPLICABLE SKILL SETS</div>
-                                    </div>
-                                </td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_accountingcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Accounting (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_accountingskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_firstaidcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">First Aid (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_firstaidskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_ridecheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Ride (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_rideskill">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_alertnesscheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Alertness (20%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_alertnessskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_forensicscheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Forensics (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_forensicsskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" rowspan="2" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_sciencecheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border">Science (0%)</td>
-                                <td colspan="2" rowspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_scienceskill">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_anthropologycheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Anthropology (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_anthropologyskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_heavymachinerycheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Heavy Machinery (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_heavymachineryskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="8" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_scienceskillName">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_archaeologycheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Archaeology (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_archaeologyskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_heavyweaponscheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Heavy Weapons (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_heavyweaponsskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_searchcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Search (20%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_searchskill">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" rowspan="2" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_artcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border">Art (0%)</td>
-                                <td colspan="2" rowspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_artskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_historycheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">History (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_historyskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_sigintcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">SIGINT (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_sigintskill">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="8" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_artskillName">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_humintcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">HUMINT (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_humintskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_stealthcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Stealth (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_stealthskill">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_artillerycheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Artillery (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_artilleryskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_lawcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Law (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_lawskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_surgerycheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Surgery (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_surgeryskill">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_athleticscheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Athletics (30%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_athleticsskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_medicinecheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Medicine (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_medicineskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_survivalcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Survival (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_survivalskill">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_bureaucracycheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Bureaucracy (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_bureaucracyskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_meleeweaponscheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Melee Weapons (30%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_meleeweaponsskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_swimcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Swim (20%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_swimskill">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_computersciencecheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Computer Science (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_computerscienceskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" rowspan="2" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_militarysciencecheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border">Military Science (0%)</td>
-                                <td colspan="2" rowspan="2" class="gray_cell top_border">
-                                    <input class="dg_input_field center" type="text" name="attr_militaryscienceskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_unarmedcombatcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Unarmed Combat (40%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_unarmedcombatskill">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" rowspan="2" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_craftcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border">Craft (0%)</td>
-                                <td colspan="2" rowspan="2" class="gray_cell top_border">
-                                    <input class="dg_input_field center" type="text" name="attr_craftskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="8" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_militaryscienceskillName">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="cell top_border bottom_border"></td>
-                                <td colspan="8" class="cell top_border bottom_border">Unnatural (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_unnaturalskill">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="8" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_craftskillName">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_navigatecheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Navigate (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_navigateskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="11" class="cell top_border bottom_border">Foreign Languages and Other Skills:</td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_criminologycheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Criminology (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_criminologyskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_occultcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Occult (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_occultskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_freeskill1check" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_freeskill1name">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_freeskill1">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_demolitionscheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Demolitions (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_demolitionsskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_persuadecheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Persuade (20%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_persuadeskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_freeskill2check" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_freeskill2name">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_freeskill2">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_disguisecheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Disguise (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_disguiseskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_pharmacycheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Pharmacy (0%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_pharmacyskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_freeskill3check" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_freeskill3name">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_freeskill3">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_dodgecheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Dodge (30%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_dodgeskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" rowspan="2" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_pilotcheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border">Pilot (0%)</td>
-                                <td colspan="2" rowspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_pilotskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_freeskill4check" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_freeskill4name">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_freeskill4">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_drivecheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Drive (20%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_driveskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="8" class="gray_cell bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_pilotskillName">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_freeskill5check" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_freeskill5name">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_freeskill5">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_firearmscheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Firearms (20%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_firearmsskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_psychotherapycheck" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="cell top_border bottom_border">Psychotherapy (10%)</td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_psychotherapyskill">
-                                </td>
-
-                                <td colspan="1"></td>
-                                <td colspan="1" class="gray_cell top_border bottom_border">
-                                    <label class="control control--checkbox">
-                                        <input type="checkbox" value="0" name="attr_freeskill6check" />
-                                        <div class="control__indicator"></div>
-                                    </label>
-                                </td>
-                                <td colspan="8" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field" type="text" name="attr_freeskill6name">
-                                </td>
-                                <td colspan="2" class="gray_cell top_border bottom_border">
-                                    <input class="dg_input_field center" type="text" name="attr_freeskill6">
-                                </td>
-                            </tr>
-                            <tr class="dg_field_header">
-                                <td colspan="35" class="cell top_border bottom_border center">
-                                    Check a box when you attempt to use a skill and fail. After the session, add 1 to each checked skill and erase all checks.
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                        </tfoot>
-                    </table>
+                <table class="dg_sheet_table">
+                    <thead>
+                        <tr style="height:0">
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:0.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                        </tr>
+                        <tr>
+                            <th class="dg_sheet_header" colspan="36">
+                                <img src="Delta_Green_logo.png" alt="logo" width="15%">
+                            </th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <!-- Delta Green sheet header -->
+                        <tr class="dg_spacer_row"></tr>
+
+                        <!-- Section 1: Name and Profession -->
+                        <tr class="dg_field_header">
+                            <td colspan="1" rowspan="6" class="dg_text_col top_border bottom_border">
+                                <div class="vert_text_wrapper">
+                                    <div class="vert_text">PERSONAL DATA</div>
+                                </div>
+                            </td>
+                            <td colspan="18" class="cell top_border">1. LAST NAME, FIRST NAME (AND ALIAS OR CODE NAME IF APPLICABLE)</td>
+                            <td colspan="17" class="cell top_border">2. PROFESSION (RANK IF APPLICABLE)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="18" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_charactername">
+                            </td>
+                            <td colspan="18" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_profession">
+                            </td>
+                        </tr>
+
+                        <!-- Section 2: Employer and Nationality -->
+                        <tr class="dg_field_header">
+                            <td colspan="18" class="cell top_border">3. EMPLOYER</td>
+                            <td colspan="17" class="cell top_border">4. NATIONALITY</td>
+                        </tr>
+                        <tr>
+                            <td colspan="18" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_employer">
+                            </td>
+                            <td colspan="18" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_nationality">
+                            </td>
+                        </tr>
+
+                        <!-- Section 3: Sex, Age, Education -->
+                        <tr class="dg_field_header">
+                            <td colspan="8" class="cell top_border">5. SEX</td>
+                            <td colspan="6" class="cell top_border">6. AGE AND D.O.B.</td>
+                            <td colspan="22" class="cell top_border">7. EDUCATION AND OCCUPATIONAL HISTORY</td>
+                        </tr>
+                        <tr>
+                            <td colspan="8" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_sex">
+                            </td>
+                            <td colspan="6" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_agedob">
+                            </td>
+                            <td colspan="22" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_educationhistory">
+                            </td>
+                        </tr>
+
+                        <!-- Delta Green sheet header -->
+                        <tr class="dg_spacer_row"></tr>
+
+                        <!-- Section 4: Stats / Section 5: Psych -->
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="1" rowspan="15" class="dg_text_col top_border bottom_border">
+                                <div class="vert_text_wrapper">
+                                    <div class="vert_text">STATISTICAL DATA</div>
+                                </div>
+                            </td>
+                            <td colspan="5" class="cell top_border bottom_border">8. STATISTICS</td>
+                            <td colspan="2" class="cell center top_border bottom_border">SCORE</td>
+                            <td colspan="2" class="cell center top_border bottom_border">x5</td>
+                            <td colspan="9" class="cell center top_border bottom_border">DISTINGUISHING FEATURES</td>
+
+                            <td colspan="1"></td>
+
+                            <!-- Psych -->
+                            <td colspan="1" rowspan="15" class="dg_text_col top_border bottom_border">
+                                <div class="vert_text_wrapper">
+                                    <div class="vert_text">PSYCHOLOGICAL DATA</div>
+                                </div>
+                            </td>
+                            <td colspan="1" class="cell top_border bottom_border">11.</td>
+                            <td colspan="13" class="cell center top_border bottom_border">BONDS</td>
+                            <td colspan="2" class="cell center top_border bottom_border">SCORE</td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="5" class="cell top_border bottom_border">Strength (STR)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_strength">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_strx5" value="@{strength}*5" disabled="true">
+                            </td>
+                            <td colspan="9" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_strengthfeatures">
+                            </td>
+
+                            <td colspan="1"></td>
+
+                            <!-- Psych -->
+                            <td colspan="14" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_bond1">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_bond1score">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="5" class="cell top_border bottom_border">Constitution (CON)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_constitution">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_conx5" value="@{constitution}*5" disabled="true">
+                            </td>
+                            <td colspan="9" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_constitutionfeatures">
+                            </td>
+
+                            <td colspan="1"></td>
+
+                            <!-- Psych -->
+                            <td colspan="14" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_bond2">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_bond2score">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="5" class="cell top_border bottom_border">Dexterity (DEX)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_dexterity">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_dexx5" value="@{dexterity}*5" disabled="true">
+                            </td>
+                            <td colspan="9" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_dexterityfeatures">
+                            </td>
+
+                            <td colspan="1"></td>
+
+                            <!-- Psych -->
+                            <td colspan="14" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_bond3">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_bond3score">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="5" class="cell top_border bottom_border">Intelligence (INT)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_intelligence">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_intx5" value="@{intelligence}*5" disabled="true">
+                            </td>
+                            <td colspan="9" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_intelligencefeatures">
+                            </td>
+
+                            <td colspan="1"></td>
+
+                            <!-- Psych -->
+                            <td colspan="14" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_bond4">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_bond4score">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="5" class="cell top_border bottom_border">Power (POW)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_power">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_powx5" value="@{power}*5" disabled="true">
+                            </td>
+                            <td colspan="9" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_powerfeatures">
+                            </td>
+
+                            <td colspan="1"></td>
+
+                            <!-- Psych -->
+                            <td colspan="14" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_bond5">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_bond5score">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="5" class="cell top_border bottom_border">Charisma (CHA)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_charisma">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_chax5" value="@{charisma}*5" disabled="true">
+                            </td>
+                            <td colspan="9" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_charismafeatures">
+                            </td>
+
+                            <td colspan="1"></td>
+
+                            <!-- Psych -->
+                            <td colspan="14" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_bond6">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_bond6score">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="1" class="cell top_border bottom_border">9.</td>
+                            <td colspan="7" class="cell top_border bottom_border center">DERIVED ATTRIBUTES</td>
+                            <td colspan="5" class="cell top_border bottom_border center">MAXIMUM</td>
+                            <td colspan="5" class="cell top_border bottom_border center">CURRENT</td>
+
+                            <td colspan="1"></td>
+
+                            <!-- Psych -->
+                            <td colspan="1" class="cell top_border bottom_border">12.</td>
+                            <td colspan="15" class="cell top_border bottom_border center">MOTIVATIONS AND MENTAL DISORDERS</td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="8" class="cell top_border bottom_border">Hit Points (HP)</td>
+                            <td colspan="5" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_hitpoints_max" value="(@{strength}+@{constitution})/2" disabled="true">
+                            </td>
+                            <td colspan="5" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_hitpoints">
+                            </td>
+
+                            <td colspan="1"></td>
+
+                            <!-- Psych -->
+                            <td colspan="15" rowspan="5" class="gray_cell top_border bottom_border">
+                                <textarea name="attr_motivationsdisorders"></textarea>
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="8" class="cell top_border bottom_border">Willpower Points (WP)</td>
+                            <td colspan="5" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_willpowerpoints_max" value="@{power}" disabled="true">
+                            </td>
+                            <td colspan="5" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_willpowerpoints">
+                            </td>
+
+                            <td colspan="1"></td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="8" class="cell top_border bottom_border">Sanity Points (SAN)</td>
+                            <td colspan="5" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_sanitypoints_max" value="99-@{unnaturalskill}">
+                            </td>
+                            <td colspan="5" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_sanitypoints">
+                            </td>
+
+                            <td colspan="1"></td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="8" class="cell top_border bottom_border">Breaking Point (BP)</td>
+                            <td colspan="5" class="gray_cell top_border bottom_border"></td>
+                            <td colspan="5" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_breakingpoint">
+                            </td>
+
+                            <td colspan="1"></td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="1" class="cell top_border bottom_border">10.</td>
+                            <td colspan="17" class="cell top_border bottom_border">PHYSICAL DESCRIPTION</td>
+
+                            <td colspan="1"></td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <!-- Stats -->
+                            <td colspan="18" rowspan="2" class="gray_cell top_border bottom_border">
+                                <textarea name="attr_physicaldescription"></textarea>
+                            </td>
+
+                            <td colspan="1"></td>
+
+                            <!-- Psych -->
+                            <td colspan="1" class="cell top_border bottom_border">13.</td>
+                            <td colspan="15" class="cell top_border bottom_border">INCIDENTS OF SAN LOSS WITHOUT GOING INSANE</td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1"></td>
+                            <td colspan="3" class="cell top_border bottom_border center">Violence</td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_violencecheck1" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_violencecheck2" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_violencecheck3" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="2" class="top_border bottom_border"></td>
+                            <td colspan="3" class="cell top_border bottom_border center">Helplessness</td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_helplessnesscheck1" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_helplessnesscheck2" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_helplessnesscheck3" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="1" class="cell top_border bottom_border"></td>
+                        </tr>
+
+                        <tr class="dg_spacer_row"></tr>
+
+                        <!-- Skills -->
+                        <tr class="dg_field_header">
+                            <td colspan="1" rowspan="19" class="dg_text_col top_border bottom_border">
+                                <div class="vert_text_wrapper">
+                                    <div class="vert_text">APPLICABLE SKILL SETS</div>
+                                </div>
+                            </td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_accountingcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Accounting (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_accountingskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_firstaidcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">First Aid (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_firstaidskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_ridecheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Ride (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_rideskill">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_alertnesscheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Alertness (20%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_alertnessskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_forensicscheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Forensics (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_forensicsskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" rowspan="2" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_sciencecheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border">Science (0%)</td>
+                            <td colspan="2" rowspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_scienceskill">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_anthropologycheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Anthropology (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_anthropologyskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_heavymachinerycheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Heavy Machinery (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_heavymachineryskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="8" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_scienceskillName">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_archaeologycheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Archaeology (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_archaeologyskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_heavyweaponscheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Heavy Weapons (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_heavyweaponsskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_searchcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Search (20%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_searchskill">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" rowspan="2" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_artcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border">Art (0%)</td>
+                            <td colspan="2" rowspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_artskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_historycheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">History (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_historyskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_sigintcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">SIGINT (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_sigintskill">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="8" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_artskillName">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_humintcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">HUMINT (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_humintskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_stealthcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Stealth (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_stealthskill">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_artillerycheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Artillery (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_artilleryskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_lawcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Law (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_lawskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_surgerycheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Surgery (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_surgeryskill">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_athleticscheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Athletics (30%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_athleticsskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_medicinecheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Medicine (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_medicineskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_survivalcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Survival (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_survivalskill">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_bureaucracycheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Bureaucracy (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_bureaucracyskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_meleeweaponscheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Melee Weapons (30%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_meleeweaponsskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_swimcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Swim (20%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_swimskill">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_computersciencecheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Computer Science (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_computerscienceskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" rowspan="2" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_militarysciencecheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border">Military Science (0%)</td>
+                            <td colspan="2" rowspan="2" class="gray_cell top_border">
+                                <input class="dg_input_field center" type="text" name="attr_militaryscienceskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_unarmedcombatcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Unarmed Combat (40%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_unarmedcombatskill">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" rowspan="2" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_craftcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border">Craft (0%)</td>
+                            <td colspan="2" rowspan="2" class="gray_cell top_border">
+                                <input class="dg_input_field center" type="text" name="attr_craftskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="8" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_militaryscienceskillName">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="cell top_border bottom_border"></td>
+                            <td colspan="8" class="cell top_border bottom_border">Unnatural (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_unnaturalskill">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="8" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_craftskillName">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_navigatecheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Navigate (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_navigateskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="11" class="cell top_border bottom_border">Foreign Languages and Other Skills:</td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_criminologycheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Criminology (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_criminologyskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_occultcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Occult (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_occultskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_freeskill1check" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_freeskill1name">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_freeskill1">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_demolitionscheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Demolitions (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_demolitionsskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_persuadecheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Persuade (20%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_persuadeskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_freeskill2check" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_freeskill2name">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_freeskill2">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_disguisecheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Disguise (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_disguiseskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_pharmacycheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Pharmacy (0%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_pharmacyskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_freeskill3check" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_freeskill3name">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_freeskill3">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_dodgecheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Dodge (30%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_dodgeskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" rowspan="2" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_pilotcheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border">Pilot (0%)</td>
+                            <td colspan="2" rowspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_pilotskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_freeskill4check" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_freeskill4name">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_freeskill4">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_drivecheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Drive (20%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_driveskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="8" class="gray_cell bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_pilotskillName">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_freeskill5check" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_freeskill5name">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_freeskill5">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_firearmscheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Firearms (20%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_firearmsskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_psychotherapycheck" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="cell top_border bottom_border">Psychotherapy (10%)</td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_psychotherapyskill">
+                            </td>
+
+                            <td colspan="1"></td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_freeskill6check" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field" type="text" name="attr_freeskill6name">
+                            </td>
+                            <td colspan="2" class="gray_cell top_border bottom_border">
+                                <input class="dg_input_field center" type="text" name="attr_freeskill6">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="35" class="cell top_border bottom_border center">
+                                Check a box when you attempt to use a skill and fail. After the session, add 1 to each checked skill and erase all checks.
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
             </div>
             <!-- Tab 1 Ends Here -->
-            
+
             <!-- Tab 2 Starts Here -->
             <div class="sheet-section-page2">
-                PAGE 2 GOES HERE
+                <table class="dg_sheet_table">
+                    <thead>
+                        <tr style="height:0">
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:0.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                            <td style="width:2.75%"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dg_field_header">
+                            <td colspan="1" rowspan="8" class="dg_text_col top_border bottom_border">
+                                <div class="vert_text_wrapper">
+                                    <div class="vert_text">INJURIES</div>
+                                </div>
+                            </td>
+
+                            <td colspan="35" class="cell top_border bottom_border">
+                                14. WOUNDS AND AILMENTS
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="35" rowspan="6" class="gray_cell top_border bottom_border">
+                                <textarea name="attr_woundsailments"></textarea>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr class="dg_field_header">
+                            <td colspan="19" class="cell right top_border bottom_border">
+                                Has First Aid been attempted since last injury?
+                            </td>
+                            <td colspan="1" class="gray_cell top_border bottom_border">
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" value="0" name="attr_firstaidattemptedcheck" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </td>
+                            <td colspan="15" class="cell top_border bottom_border">
+                                yes: only Medicine, Surgery, or long-term rest can help further
+                            </td>
+                        </tr>
+
+                        <!-- Spacer row -->
+                        <tr class="dg_spacer_row"></tr>
+
+                        <tr class="dg_field_header">
+                            <td colspan="1" rowspan="17" class="dg_text_col top_border bottom_border">
+                                <div class="vert_text_wrapper">
+                                    <div class="vert_text">EQUIPMENT</div>
+                                </div>
+                            </td>
+                            <td colspan="35" class="cell top_border bottom_border">
+                                15. ARMOR AND GEAR
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="35" rowspan="7" class="gray_cell top_border bottom_border">
+                                <textarea name="attr_armorandgear"></textarea>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr class="dg_field_header">
+                            <td colspan="35" class="cell center top_border bottom_border">
+                                Body armor reduces the damage of all attacks except Called Shots and successful Lethality rolls.
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="cell top_border bottom_border">16.</td>
+                            <td colspan="8" class="cell center top_border bottom_border">WEAPONS</td>
+                            <td colspan="2" class="cell center top_border bottom_border">SKILL %</td>
+                            <td colspan="4" class="cell center top_border bottom_border">BASE RANGE</td>
+                            <td colspan="5" class="cell center top_border bottom_border">DAMAGE</td>
+                            <td colspan="4" class="cell center top_border bottom_border">ARMOR PIERCING</td>
+                            <td colspan="4" class="cell center top_border bottom_border">LETHALITY %</td>
+                            <td colspan="4" class="cell center top_border bottom_border">KILL RADIUS</td>
+                            <td colspan="3" class="cell center top_border bottom_border">AMMO</td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="cell top_border bottom_border">a)</td>
+                            <td colspan="8" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponnameA">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponskillA">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponbaserangeA">
+                            </td>
+                            <td colspan="5" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weapondamageA">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponAPA">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponlethalityA">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponkillradiusA">
+                            </td>
+                            <td colspan="3" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponammoA">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="cell top_border bottom_border">b)</td>
+                            <td colspan="8" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponnameB">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponskillB">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponbaserangeB">
+                            </td>
+                            <td colspan="5" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weapondamageB">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponAPB">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponlethalityB">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponkillradiusB">
+                            </td>
+                            <td colspan="3" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponammoB">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="cell top_border bottom_border">c)</td>
+                            <td colspan="8" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponnameC">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponskillC">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponbaserangeC">
+                            </td>
+                            <td colspan="5" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weapondamageC">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponAPC">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponlethalityC">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponkillradiusC">
+                            </td>
+                            <td colspan="3" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponammoC">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="cell top_border bottom_border">d)</td>
+                            <td colspan="8" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponnameD">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponskillD">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponbaserangeD">
+                            </td>
+                            <td colspan="5" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weapondamageD">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponAPD">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponlethalityD">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponkillradiusD">
+                            </td>
+                            <td colspan="3" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponammoD">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="cell top_border bottom_border">e)</td>
+                            <td colspan="8" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponnameE">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponskillE">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponbaserangeE">
+                            </td>
+                            <td colspan="5" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weapondamageE">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponAPE">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponlethalityE">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponkillradiusE">
+                            </td>
+                            <td colspan="3" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponammoE">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="cell top_border bottom_border">f)</td>
+                            <td colspan="8" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponnameF">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponskillF">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponbaserangeF">
+                            </td>
+                            <td colspan="5" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weapondamageF">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponAPF">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponlethalityF">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponkillradiusF">
+                            </td>
+                            <td colspan="3" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponammoF">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="cell top_border bottom_border">g)</td>
+                            <td colspan="8" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponnameG">
+                            </td>
+                            <td colspan="2" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponskillG">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponbaserangeG">
+                            </td>
+                            <td colspan="5" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weapondamageG">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponAPG">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponlethalityG">
+                            </td>
+                            <td colspan="4" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponkillradiusG">
+                            </td>
+                            <td colspan="3" class="gray_cell center top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_weaponammoG">
+                            </td>
+                        </tr>
+
+                        <tr class="dg_spacer_row"></tr>
+
+                        <tr class="dg_field_header">
+                            <td colspan="1" rowspan="17" class="dg_text_col top_border bottom_border">
+                                <div class="vert_text_wrapper">
+                                    <div class="vert_text">REMARKS</div>
+                                </div>
+                            </td>
+
+                            <td colspan="19" class="cell top_border bottom_border">
+                                17. PERSONAL DETAILS AND NOTES
+                            </td>
+                            <td colspan="16" class="cell top_border bottom_border">
+                                18. DEVELOPMENTS WHICH AFFECT HOME AND FAMILY
+                            </td>
+                        </tr>
+
+                        <tr class="dg_field_header">
+                            <td colspan="19" rowspan="16" class="gray_cell top_border bottom_border">
+                                <textarea name="attr_personaldetails"></textarea>
+                            </td>
+                            <td colspan="16" rowspan="9" class="gray_cell top_border bottom_border">
+                                <textarea name="attr_homefamilydevelopments"></textarea>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+
+                        <tr class="dg_field_header">
+                            <td colspan="1" class="cell top_border bottom_border">19.</td>
+                            <td colspan="7" class="cell center top_border bottom_border">SPECIAL TRAINING</td>
+                            <td colspan="8" class="cell center top_border bottom_border">SKILL OR STAT USED</td>
+                        </tr>
+
+                        <tr class="dg_field_header">
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingName1">
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingSkill1">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingName2">
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingSkill2">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingName3">
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingSkill3">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingName4">
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingSkill4">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingName5">
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingSkill5">
+                            </td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingName6">
+                            </td>
+                            <td colspan="8" class="gray_cell top_border bottom_border">
+                                <input type="text" class="dg_input_field" name="attr_specialTrainingSkill6">
+                            </td>
+                        </tr>
+
+                        <tr class="dg_field_header">
+                            <td colspan="35" class="cell center top_border bottom_border">Please indicate why this agent was recruited and why the agent agreed to be recruited.</td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="19" class="cell top_border">20. AUTHORIZING OFFICER</td>
+                            <td colspan="17" class="cell top_border">21. AGENT SIGNATURE</td>
+                        </tr>
+                        <tr class="dg_field_header">
+                            <td colspan="19" class="cell bottom_border"></td>
+                            <td colspan="17" class="cell bottom_border"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="dg_field_header">
+                            <td colspan="2" rowspan="2" class="sheet-big-text center">DD</td>
+                            <td colspan="4" rowspan="2" class="center">UNITED STATES
+                                <br>FORMS</td>
+                            <td colspan="2" rowspan="2" class="sheet-big-text center">315</td>
+                            <td colspan="10" rowspan="2" class="sheet-big-text center"></td>
+                            <td colspan="14" rowspan="2" class="center">
+                                TOP SECRET//ORCON//SPECIAL ACCESS REQUIRED-DELTA GREEN
+                                <br>AGENT DOCUMENTATION SHEET
+                            </td>
+                            <td colspan="4" rowspan="2" class="sheet-big-text center">112382</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
-            
+
             <!-- CHARACTER SHEET ENDS HERE -->
 
         </div>
