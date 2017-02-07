@@ -35,6 +35,15 @@ input.sheet-center {
 html {
     font-family: 'Droid Sans', sans-serif;
 }
+.charsheet button[type=roll]:before {
+    display: none;
+}
+.charsheet .sheet-dg-field-header button[type=roll] {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    float: right;
+}
 .sheet-cell {
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -106,6 +115,9 @@ td.sheet-bottom-border {
     top: 50%;
     left: 50%;
 }
+.sheet-rolltemplate-dgcheck table {
+    width: 100%;
+}
 .sheet-rolltemplate-dgcheck .sheet-check-header {
     background-color: black;
     color: white;
@@ -122,6 +134,9 @@ td.sheet-bottom-border {
 }
 .sheet-rolltemplate-dgcheck .sheet-roll-value {
     text-align: right;
+}
+.sheet-rolltemplate-dgcheck .inlinerollresult {
+    display: inline-block;
 }
 
 .sheet-control {
@@ -264,6 +279,7 @@ td.sheet-bottom-border {
 }
 /*this modifies the span color once the radio button is selected so you know which tab is selected*/
 
+/*
 .charsheet input.sheet-tab1:checked + span.sheet-tab1,
 .charsheet input.sheet-tab2:checked + span.sheet-tab2,
 {
@@ -271,4 +287,5 @@ td.sheet-bottom-border {
     color: #bfc4c6;
     border-radius: 4px;
 }
+*/
 /*----------- End Tab Setup -----------*/

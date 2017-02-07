@@ -159,8 +159,10 @@
                         <tr class="sheet-dg-field-header">
                             <!-- Stats -->
                             <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">
-                                Strength (STR)
-                                <button type="roll" value="&{template:dgcheck} {{checkname=Strength}} {{checkthreshold=[[@{strx5}+?{Modifier|0}]]}} {{checkmodifier=?{Modifier|0}}} {{checkbase=@{strx5}}} {{checkvalue=[[1d100]]}}"></button>
+                                Strength
+                                <button type="roll" value="&{template:dgcheck} {{checkname=Strength}} {{checkthreshold=[[@{strx5}+?{Modifier|0}]]}} {{checkmodifier=[[?{Modifier|0}]]}} {{checkbase=[[@{strx5}]]}} {{checkvalue=[[1d100]]}}">
+                                (STR)
+                                </button>
                             </td>
                             <td colspan="2" class="sheet-gray-cell sheet-top-border sheet-bottom-border">
                                 <input class="sheet-dg-input-field sheet-center" type="text" name="attr_strength">
@@ -184,7 +186,12 @@
                         </tr>
                         <tr class="sheet-dg-field-header">
                             <!-- Stats -->
-                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">Constitution (CON)</td>
+                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">
+                                Constitution
+                                <button type="roll" value="&{template:dgcheck} {{checkname=Constitution}} {{checkthreshold=[[@{conx5}+?{Modifier|0}]]}} {{checkmodifier=[[?{Modifier|0}]]}} {{checkbase=[[@{conx5}]]}} {{checkvalue=[[1d100]]}}">
+                                (CON)
+                                </button>
+                            </td>
                             <td colspan="2" class="sheet-gray-cell sheet-top-border sheet-bottom-border">
                                 <input class="sheet-dg-input-field sheet-center" type="text" name="attr_constitution">
                             </td>
@@ -207,7 +214,12 @@
                         </tr>
                         <tr class="sheet-dg-field-header">
                             <!-- Stats -->
-                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">Dexterity (DEX)</td>
+                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">
+                                Dexterity
+                                <button type="roll" value="&{template:dgcheck} {{checkname=Dexterity}} {{checkthreshold=[[@{dexx5}+?{Modifier|0}]]}} {{checkmodifier=[[?{Modifier|0}]]}} {{checkbase=[[@{dexx5}]]}} {{checkvalue=[[1d100]]}}">
+                                (DEX)
+                                </button>
+                            </td>
                             <td colspan="2" class="sheet-gray-cell sheet-top-border sheet-bottom-border">
                                 <input class="sheet-dg-input-field sheet-center" type="text" name="attr_dexterity">
                             </td>
@@ -230,7 +242,12 @@
                         </tr>
                         <tr class="sheet-dg-field-header">
                             <!-- Stats -->
-                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">Intelligence (INT)</td>
+                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">
+                                Intelligence
+                                <button type="roll" value="&{template:dgcheck} {{checkname=Intelligence}} {{checkthreshold=[[@{intx5}+?{Modifier|0}]]}} {{checkmodifier=[[?{Modifier|0}]]}} {{checkbase=[[@{intx5}]]}} {{checkvalue=[[1d100]]}}">
+                                (INT)
+                                </button>
+                            </td>
                             <td colspan="2" class="sheet-gray-cell sheet-top-border sheet-bottom-border">
                                 <input class="sheet-dg-input-field sheet-center" type="text" name="attr_intelligence">
                             </td>
@@ -253,7 +270,12 @@
                         </tr>
                         <tr class="sheet-dg-field-header">
                             <!-- Stats -->
-                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">Power (POW)</td>
+                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">
+                                Power
+                                <button type="roll" value="&{template:dgcheck} {{checkname=Power}} {{checkthreshold=[[@{powx5}+?{Modifier|0}]]}} {{checkmodifier=[[?{Modifier|0}]]}} {{checkbase=[[@{powx5}]]}} {{checkvalue=[[1d100]]}}">
+                                (POW)
+                                </button>
+                            </td>
                             <td colspan="2" class="sheet-gray-cell sheet-top-border sheet-bottom-border">
                                 <input class="sheet-dg-input-field sheet-center" type="text" name="attr_power">
                             </td>
@@ -276,7 +298,10 @@
                         </tr>
                         <tr class="sheet-dg-field-header">
                             <!-- Stats -->
-                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">Charisma (CHA)</td>
+                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">
+                                Charisma
+                            <button type="roll" value="&{template:dgcheck} {{checkname=Charisma}} {{checkthreshold=[[@{chax5}+?{Modifier|0}]]}} {{checkmodifier=[[?{Modifier|0}]]}} {{checkbase=[[@{chax5}]]}} {{checkvalue=[[1d100]]}}">(CHA)</button>
+                            </td>
                             <td colspan="2" class="sheet-gray-cell sheet-top-border sheet-bottom-border">
                                 <input class="sheet-dg-input-field sheet-center" type="text" name="attr_charisma">
                             </td>
@@ -341,7 +366,10 @@
                         </tr>
                         <tr class="sheet-dg-field-header">
                             <!-- Stats -->
-                            <td colspan="8" class="sheet-cell sheet-top-border sheet-bottom-border">Sanity Points (SAN)</td>
+                            <td colspan="8" class="sheet-cell sheet-top-border sheet-bottom-border">
+                                Sanity Points
+                                <button type="roll" value="&{template:dgcheck} {{checkname=Sanity}} {{checkthreshold=[[@{sanitypoints}+?{Modifier|0}]]}} {{checkmodifier=[[?{Modifier|0}]]}} {{checkbase=[[@{sanitypoints}]]}} {{checkvalue=[[1d100]]}}">(SAN)</button>
+                            </td>
                             <td colspan="5" class="sheet-gray-cell sheet-top-border sheet-bottom-border">
                                 <input class="sheet-dg-input-field sheet-center" type="text" name="attr_sanitypoints_max" value="99-@{unnaturalskill}">
                             </td>
