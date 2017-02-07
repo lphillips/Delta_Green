@@ -35,7 +35,7 @@ input.sheet-center {
 html {
     font-family: 'Droid Sans', sans-serif;
 }
-.charsheet button[type=roll]:before {
+.charsheet .sheet-attr-check-roll:before {
     display: none;
 }
 .charsheet .sheet-dg-field-header button[type=roll] {
