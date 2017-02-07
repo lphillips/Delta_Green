@@ -158,7 +158,10 @@
                         </tr>
                         <tr class="sheet-dg-field-header">
                             <!-- Stats -->
-                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">Strength (STR)</td>
+                            <td colspan="5" class="sheet-cell sheet-top-border sheet-bottom-border">
+                                Strength (STR)
+                                <button type="roll" value="&{template:dgcheck} {{checkname=Strength}} {{checkthreshold=[[@{strx5}+?{Modifier|0}]]}} {{checkmodifier=?{Modifier|0}}} {{checkbase=@{strx5}}} {{checkvalue=[[1d100]]}}"></button>
+                            </td>
                             <td colspan="2" class="sheet-gray-cell sheet-top-border sheet-bottom-border">
                                 <input class="sheet-dg-input-field sheet-center" type="text" name="attr_strength">
                             </td>
@@ -1479,6 +1482,48 @@
                     </tfoot>
                 </table>
             </div>
+
+            <!-- Roll Templates -->
+            <rolltemplate class="sheet-rolltemplate-dgcheck">
+                <table>
+                    <tr class="sheet-check-header">
+                        <th colspan="3">{{checkname}} Check</th>
+                    </tr>
+                    <tr>
+                        <td><span class="sheet-roll-text">Threshold</span>
+                        </td>
+                        <td colspan="2" class="sheet-roll-value">{{checkthreshold}}</td>
+                    </tr>
+                    <tr class="sheet-gray-row">
+                        <td><span class="sheet-roll-subtext">Base</span>
+                        </td>
+                        <td colspan="2" class="sheet-roll-value sheet-roll-subtext">{{checkbase}}</td>
+                    </tr>
+                    <tr>
+                        <td><span class="sheet-roll-subtext">Modifier</span>
+                        </td>
+                        <td colspan="2" class="sheet-roll-value sheet-roll-subtext">{{checkmodifier}}</td>
+                    </tr>
+                    <tr class="sheet-gray-row">
+                        <td><span class="sheet-roll-text">Roll</span>
+                        </td>
+                        <td colspan="2" class="sheet-roll-value">{{checkvalue}}</td>
+                    </tr>
+                    {{#rollGreater() checkvalue checkthreshold}}
+                    <tr>
+                        <td colspan="3" class="sheet-center"><span class="sheet-roll-text">CHECK FAILED</span>
+                        </td>
+                    </tr>
+                    {{/rollGreater() checkvalue checkthreshold}} {{#^rollGreater() checkvalue checkthreshold}}
+                    <tr>
+                        <td colspan="3" class="sheet-center"><span class="sheet-roll-text">CHECK SUCCEEDED</span>
+                        </td>
+                    </tr>
+                    {{/^rollGreater() checkvalue checkthreshold}}
+                </table>
+            </rolltemplate>
+
+            <!-- End Roll Templates -->
 
             <!-- CHARACTER SHEET ENDS HERE -->
 
