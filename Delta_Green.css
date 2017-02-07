@@ -11,9 +11,9 @@ table, th, td {
 tr {
     height: 23px;
 }
-textarea {
+.charsheet textarea {
     width: 100%;
-    height: 100%;
+    height: auto;
     resize: none;
     border: none;
     margin: 0 0 0 0;
@@ -22,6 +22,8 @@ textarea {
     font-family: 'Courier';
     border-radius: 0;
     padding: 0px;
+    box-sizing: border-box;
+    line-height: 23px;
 }
 td.sheet-center {
     text-align: center;
