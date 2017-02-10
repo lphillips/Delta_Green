@@ -11,6 +11,9 @@ table, th, td {
 tr {
     height: 23px;
 }
+.charsheet td, th {
+    padding: 0px;
+}
 .charsheet textarea {
     width: 100%;
     height: auto;
@@ -42,7 +45,7 @@ html {
 }
 .charsheet .sheet-dg-field-header button[type=roll] {
     font-family: 'Droid Sans', sans-serif;
-    font-size: 10px;
+    font-size: inherit;
     font-weight: bold;
     float: right;
 }
